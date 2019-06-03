@@ -27,7 +27,7 @@ export default function Template(props) {
     <Layout {...props}>
       <div className="blog-post-container">
         <Helmet
-          title={`Sseon Blog - ${title}`}
+          title={`aweful Blog - ${title}`}
           meta={[
             { name: 'description', content: `${excerpt}` },
             { name: 'keywords', content: `${tags}` },

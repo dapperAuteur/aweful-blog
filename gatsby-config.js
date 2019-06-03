@@ -6,10 +6,9 @@ module.exports = {
   siteMetadata: {
     author: 'SeonHyungJo',
     title: 'Renewal Blog',
-    siteUrl: 'https://gatsby-sseon-starter.netlify.com'
+    siteUrl: 'https://gatsby-sseon-starter.netlify.com',
   },
   plugins: [
-    'gatsby-plugin-offline',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
@@ -20,9 +19,10 @@ module.exports = {
         background_color: '#fff',
         theme_color: '#663399',
         display: 'standalone',
-        icon: 'assets/logo.jpg'
-      }
+        icon: 'assets/logo.jpg',
+      },
     },
+    'gatsby-plugin-offline',
     {
       resolve: 'gatsby-plugin-sitemap',
       options: {
@@ -43,15 +43,15 @@ module.exports = {
                 }
               }
             }
-        }`
-      }
+        }`,
+      },
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/post`,
-        name: 'post'
-      }
+        name: 'post',
+      },
     },
     {
       resolve: 'gatsby-plugin-root-import',
@@ -62,8 +62,8 @@ module.exports = {
         layout: path.join(__dirname, 'src/layout'),
         style: path.join(__dirname, 'src/style'),
         util: path.join(__dirname, 'src/util'),
-        post: path.join(__dirname, 'post')
-      }
+        post: path.join(__dirname, 'post'),
+      },
     },
     {
       resolve: 'gatsby-transformer-remark',
@@ -72,8 +72,8 @@ module.exports = {
           {
             resolve: 'gatsby-remark-images',
             options: {
-              linkImagesToOriginal: false
-            }
+              linkImagesToOriginal: false,
+            },
           },
           {
             resolve: 'gatsby-remark-prismjs',
@@ -82,8 +82,8 @@ module.exports = {
               inlineCodeMarker: null,
               aliases: {},
               showLineNumbers: true,
-              noInlineHighlight: false
-            }
+              noInlineHighlight: false,
+            },
           },
           {
             resolve: 'gatsby-remark-emojis',
@@ -101,22 +101,22 @@ module.exports = {
                 'margin-top': '1px',
                 position: 'relative',
                 top: '5px',
-                width: '25px'
-              }
-            }
-          }
-        ]
-      }
+                width: '25px',
+              },
+            },
+          },
+        ],
+      },
     },
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        configFile: 'robots-txt.config.js'
-      }
+        configFile: 'robots-txt.config.js',
+      },
     },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sharp',
     'gatsby-plugin-sass',
     'gatsby-plugin-catch-links',
-  ]
+  ],
 }
