@@ -1,5 +1,12 @@
 import React from 'react'
-import { FaGithub, FaFacebook, FaYoutube } from 'react-icons/fa'
+import {
+  FaGithub,
+  FaTwitter,
+  FaTwitch,
+  FaDiscord,
+  FaFacebook,
+  FaYoutube,
+} from 'react-icons/fa'
 import { IoIosMail } from 'react-icons/io'
 
 import { Layout } from 'layout'
@@ -17,31 +24,55 @@ const Index = props => {
             <LinkButton to="/">
               <img
                 className="img-circle"
-                src="https://avatars2.githubusercontent.com/u/24274424?s=460&v=4"
+                src="https://avatars0.githubusercontent.com/u/10903879?s=460&v=4"
                 alt="MainImge"
               />
             </LinkButton>
           </div>
           {/* My Name */}
-          <div className="name">My Name</div>
+          <div className="name">awEful</div>
           {/* Title */}
-          <div className="title">Write Something</div>
+          <div className="title">awEful: full of life</div>
           {/* SNS Buttons */}
           <div className="sns">
-            <SNSButton key={'Mail_button'} to={'mailto:id@gmail.com'}>
+            <SNSButton
+              key={'Mail_button'}
+              to={'mailto:iwritecodecorp@gmail.com'}
+            >
               <IoIosMail size="1.5rem" />
             </SNSButton>
             <SNSButton
               key={'Github_button'}
-              to={'http://github.com/SeonHyungJo'}
+              to={'https://github.com/dapperAuteur'}
             >
               <FaGithub size="1.5rem" />
             </SNSButton>
-            <SNSButton key={'FaceBook_button'} to={'http://facebook.com/'}>
+            <SNSButton
+              key={'Twitter_button'}
+              to={'http://bit.ly/twitter_aweful/'}
+            >
+              <FaTwitter size="1.5rem" />
+            </SNSButton>
+            <SNSButton key={'Facebook_button'} to={'bit.ly/brand_am_fb/'}>
               <FaFacebook size="1.5rem" />
             </SNSButton>
-            <SNSButton key={'Youtube_button'} to={'https://youtube.com/'}>
+            <SNSButton
+              key={'Twitch_button'}
+              to={'http://bit.ly/twitch_awefulbrown/'}
+            >
+              <FaTwitch size="1.5rem" />
+            </SNSButton>
+            <SNSButton
+              key={'YouTube_button'}
+              to={'http://bit.ly/youtube_awefulbrown/'}
+            >
               <FaYoutube size="1.5rem" />
+            </SNSButton>
+            <SNSButton
+              key={'Discord_button'}
+              to={'http://bit.ly/aweful_discord/'}
+            >
+              <FaDiscord size="1.5rem" />
             </SNSButton>
           </div>
 
