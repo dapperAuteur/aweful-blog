@@ -38,7 +38,7 @@ export class Layout extends React.Component {
       <>
         {/* head custom 진행 */}
         <Helmet
-          title="Gatsby for SSEON"
+          title="aweful Blog"
           meta={[
             { name: 'description', content: 'sseon theme' },
             { name: 'keywords', content: 'sseon, blog, theme' },

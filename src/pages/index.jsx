@@ -19,12 +19,12 @@ const Index = props => {
     <Layout {...props}>
       <div className="bContainer">
         <div className="bCard">
-          <img
+          {/*<img
             id="podcast-logo"
             // src="./../images/idNkhtw_yet_podcast_90_ver0001white_text.png"
             src="https://res.cloudinary.com/devdash54321/image/upload/v1559597910/idNkhtw_yet_podcast_90_ver0001white_text.png"
             alt="podcast logo"
-          />
+          />*/}
           {/* Main Image */}
           <div className="img">
             <LinkButton to="/">
@@ -36,9 +36,9 @@ const Index = props => {
             </LinkButton>
           </div>
           {/* My Name */}
-          <div className="name">awEful</div>
+          <div className="name">aweful: full of life</div>
           {/* Title */}
-          <div className="title">awEful: full of life</div>
+          <div className="title">Streaming Channels for aweful</div>
           {/* SNS Buttons */}
           <div className="sns">
             <SNSButton
@@ -83,14 +83,14 @@ const Index = props => {
           </div>
 
           {/* Bottom Button */}
-          <div className="menu">
+          {/*<div className="menu">
             <div className="menuItem">
               <LinkButton to="/posts">All Post</LinkButton>
             </div>
             <div className="menuItem">
               <LinkButton to="/category">Category</LinkButton>
             </div>
-          </div>
+        </div>*/}
         </div>
       </div>
     </Layout>
