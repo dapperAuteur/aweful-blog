@@ -19,12 +19,18 @@ const Index = props => {
     <Layout {...props}>
       <div className="bContainer">
         <div className="bCard">
+          <img
+            id="podcast-logo"
+            // src="./../images/idNkhtw_yet_podcast_90_ver0001white_text.png"
+            src="https://res.cloudinary.com/devdash54321/image/upload/v1559597910/idNkhtw_yet_podcast_90_ver0001white_text.png"
+            alt="podcast logo"
+          />
           {/* Main Image */}
           <div className="img">
             <LinkButton to="/">
               <img
                 className="img-circle"
-                src="https://avatars0.githubusercontent.com/u/10903879?s=460&v=4"
+                src="https://res.cloudinary.com/devdash54321/image/upload/v1559658932/IMG_3704_aweful_in_a_hat_inverted.png"
                 alt="MainImge"
               />
             </LinkButton>
