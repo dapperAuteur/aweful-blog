@@ -42,6 +42,37 @@ const Index = props => {
           {/* SNS Buttons */}
           <div className="sns">
             <SNSButton
+              key={'Twitch_button'}
+              to={'http://bit.ly/twitch_awefulbrown/'}
+            >
+              <FaTwitch size="1.5rem" />
+            </SNSButton>
+            <SNSButton
+              key={'YouTube_button'}
+              to={'http://bit.ly/youtube_awefulbrown/'}
+            >
+              <FaYoutube size="1.5rem" />
+            </SNSButton>
+            <SNSButton
+              key={'Discord_button'}
+              to={'http://bit.ly/aweful_discord/'}
+            >
+              <FaDiscord size="1.5rem" />
+            </SNSButton>
+            <SNSButton key={'Facebook_button'} to={'bit.ly/brand_am_fb/'}>
+              <FaFacebook size="1.5rem" />
+            </SNSButton>
+          </div>
+          {/* Title */}
+          <div className="title">Social Channels for aweful</div>
+          <div className="sns">
+            <SNSButton
+              key={'Discord_button'}
+              to={'http://bit.ly/aweful_discord/'}
+            >
+              <FaDiscord size="1.5rem" />
+            </SNSButton>
+            <SNSButton
               key={'Mail_button'}
               to={'mailto:iwritecodecorp@gmail.com'}
             >
@@ -61,24 +92,6 @@ const Index = props => {
             </SNSButton>
             <SNSButton key={'Facebook_button'} to={'bit.ly/brand_am_fb/'}>
               <FaFacebook size="1.5rem" />
-            </SNSButton>
-            <SNSButton
-              key={'Twitch_button'}
-              to={'http://bit.ly/twitch_awefulbrown/'}
-            >
-              <FaTwitch size="1.5rem" />
-            </SNSButton>
-            <SNSButton
-              key={'YouTube_button'}
-              to={'http://bit.ly/youtube_awefulbrown/'}
-            >
-              <FaYoutube size="1.5rem" />
-            </SNSButton>
-            <SNSButton
-              key={'Discord_button'}
-              to={'http://bit.ly/aweful_discord/'}
-            >
-              <FaDiscord size="1.5rem" />
             </SNSButton>
           </div>
 
