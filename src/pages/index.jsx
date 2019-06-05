@@ -43,23 +43,26 @@ const Index = props => {
           <div className="sns">
             <SNSButton
               key={'Twitch_button'}
-              to={'http://bit.ly/twitch_awefulbrown/'}
+              to="https://www.twitch.tv/awefulbrown/"
             >
               <FaTwitch size="1.5rem" />
             </SNSButton>
             <SNSButton
               key={'YouTube_button'}
-              to={'http://bit.ly/youtube_awefulbrown/'}
+              to="https://www.youtube.com/channel/UC2ntycy7pKptbVZQqND03GA/"
             >
               <FaYoutube size="1.5rem" />
             </SNSButton>
             <SNSButton
               key={'Discord_button'}
-              to={'http://bit.ly/aweful_discord/'}
+              to="https://discordapp.com/invite/6mdx7xx/"
             >
               <FaDiscord size="1.5rem" />
             </SNSButton>
-            <SNSButton key={'Facebook_button'} to={'bit.ly/brand_am_fb/'}>
+            <SNSButton
+              key={'Facebook_button'}
+              to="https://www.facebook.com/brandanthonymcdonald/"
+            >
               <FaFacebook size="1.5rem" />
             </SNSButton>
           </div>
@@ -68,7 +71,7 @@ const Index = props => {
           <div className="sns">
             <SNSButton
               key={'Discord_button'}
-              to={'http://bit.ly/aweful_discord/'}
+              to="https://discordapp.com/invite/6mdx7xx/"
             >
               <FaDiscord size="1.5rem" />
             </SNSButton>
@@ -86,11 +89,14 @@ const Index = props => {
             </SNSButton>
             <SNSButton
               key={'Twitter_button'}
-              to={'http://bit.ly/twitter_aweful/'}
+              to="https://twitter.com/awefulBrown/"
             >
               <FaTwitter size="1.5rem" />
             </SNSButton>
-            <SNSButton key={'Facebook_button'} to={'bit.ly/brand_am_fb/'}>
+            <SNSButton
+              key={'Facebook_button'}
+              to="https://www.facebook.com/brandanthonymcdonald/"
+            >
               <FaFacebook size="1.5rem" />
             </SNSButton>
           </div>
