@@ -6,6 +6,7 @@ import {
   FaDiscord,
   FaFacebook,
   FaYoutube,
+  FaCalendar,
 } from 'react-icons/fa'
 import { IoIosMail } from 'react-icons/io'
 
@@ -64,6 +65,15 @@ const Index = props => {
               to="https://www.facebook.com/brandanthonymcdonald/"
             >
               <FaFacebook size="1.5rem" />
+            </SNSButton>
+          </div>
+          <div className="title">Meet || Code w/ aweful</div>
+          <div className="sns">
+            <SNSButton
+              key={'Calendly_button'}
+              to="https://calendly.com/iwritecode"
+            >
+              <FaCalendar size="1.5rem" />
             </SNSButton>
           </div>
           {/* Title */}
