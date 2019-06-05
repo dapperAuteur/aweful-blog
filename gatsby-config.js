@@ -5,21 +5,21 @@ module.exports = {
   pathPrefix: process.env.CI ? `/${name}` : '/',
   siteMetadata: {
     author: 'SeonHyungJo',
-    title: 'Renewal Blog',
+    title: 'aweful Blog',
     siteUrl: 'https://gatsby-sseon-starter.netlify.com',
   },
   plugins: [
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        title: 'Blog',
-        name: 'Blog Starter',
-        short_name: 'Blog',
+        title: 'aweful Blog',
+        name: 'aweful Blog Starter',
+        short_name: 'aweful Blog',
         start_url: '/',
         background_color: '#fff',
         theme_color: '#663399',
         display: 'standalone',
-        icon: 'assets/logo.jpg',
+        icon: 'src/images/img_3704_aweful_in_a_hat_inverted.png',
       },
     },
     'gatsby-plugin-offline',
