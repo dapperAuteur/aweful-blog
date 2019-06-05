@@ -31,7 +31,7 @@ const Index = props => {
             <LinkButton to="/">
               <img
                 className="img-circle"
-                src="https://res.cloudinary.com/devdash54321/image/upload/v1559658932/IMG_3704_aweful_in_a_hat_inverted.png"
+                src="https://res.cloudinary.com/devdash54321/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1559658932/IMG_3704_aweful_in_a_hat_inverted.png"
                 alt="MainImge"
               />
             </LinkButton>
