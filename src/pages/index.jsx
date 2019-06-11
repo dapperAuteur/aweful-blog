@@ -1,19 +1,13 @@
 import React from 'react'
-import {
-  FaGithub,
-  FaTwitter,
-  FaTwitch,
-  FaDiscord,
-  FaFacebook,
-  FaYoutube,
-  FaCalendar,
-} from 'react-icons/fa'
-import { IoIosMail } from 'react-icons/io'
 
 import { Layout } from 'layout'
-import { SNSButton, LinkButton } from 'component/Button'
+import { LinkButton } from 'component/Button'
+
+import Streaming from './../components/SegmentLinks/Streaming'
 
 import 'style/index.scss'
+import Calendar from '../components/SegmentLinks/Calendar'
+import SocialMedia from '../components/SegmentLinks/SocialMedia'
 
 const Index = props => {
   return (
@@ -39,77 +33,10 @@ const Index = props => {
           {/* My Name */}
           <div className="name">aweful: full of life</div>
           {/* Title */}
-          <div className="title">Streaming Channels for aweful</div>
-          {/* SNS Buttons */}
-          <div className="sns">
-            <SNSButton
-              key={'Twitch_button'}
-              to="https://www.twitch.tv/awefulbrown/"
-            >
-              <FaTwitch size="1.5rem" />
-            </SNSButton>
-            <SNSButton
-              key={'YouTube_button'}
-              to="https://www.youtube.com/channel/UC2ntycy7pKptbVZQqND03GA/"
-            >
-              <FaYoutube size="1.5rem" />
-            </SNSButton>
-            <SNSButton
-              key={'Discord_button'}
-              to="https://discordapp.com/invite/6mdx7xx/"
-            >
-              <FaDiscord size="1.5rem" />
-            </SNSButton>
-            <SNSButton
-              key={'Facebook_button'}
-              to="https://www.facebook.com/brandanthonymcdonald/"
-            >
-              <FaFacebook size="1.5rem" />
-            </SNSButton>
-          </div>
-          <div className="title">Meet || Code w/ aweful</div>
-          <div className="sns">
-            <SNSButton
-              key={'Calendly_button'}
-              to="https://calendly.com/iwritecode"
-            >
-              <FaCalendar size="1.5rem" />
-            </SNSButton>
-          </div>
+          <Streaming />
           {/* Title */}
-          <div className="title">Social Channels for aweful</div>
-          <div className="sns">
-            <SNSButton
-              key={'Discord_button'}
-              to="https://discordapp.com/invite/6mdx7xx/"
-            >
-              <FaDiscord size="1.5rem" />
-            </SNSButton>
-            <SNSButton
-              key={'Mail_button'}
-              to={'mailto:iwritecodecorp@gmail.com'}
-            >
-              <IoIosMail size="1.5rem" />
-            </SNSButton>
-            <SNSButton
-              key={'Github_button'}
-              to={'https://github.com/dapperAuteur'}
-            >
-              <FaGithub size="1.5rem" />
-            </SNSButton>
-            <SNSButton
-              key={'Twitter_button'}
-              to="https://twitter.com/awefulBrown/"
-            >
-              <FaTwitter size="1.5rem" />
-            </SNSButton>
-            <SNSButton
-              key={'Facebook_button'}
-              to="https://www.facebook.com/brandanthonymcdonald/"
-            >
-              <FaFacebook size="1.5rem" />
-            </SNSButton>
-          </div>
+          <Calendar />
+          <SocialMedia />
 
           {/* Bottom Button */}
           {/*<div className="menu">
