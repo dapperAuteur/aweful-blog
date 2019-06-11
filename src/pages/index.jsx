@@ -8,6 +8,7 @@ import Streaming from './../components/SegmentLinks/Streaming'
 import 'style/index.scss'
 import Calendar from '../components/SegmentLinks/Calendar'
 import SocialMedia from '../components/SegmentLinks/SocialMedia'
+import MusicTidal from '../components/SegmentLinks/MusicTidal'
 
 const Index = props => {
   return (
@@ -37,7 +38,7 @@ const Index = props => {
           {/* Title */}
           <Calendar />
           <SocialMedia />
-
+          <MusicTidal />
           {/* Bottom Button */}
           {/*<div className="menu">
             <div className="menuItem">

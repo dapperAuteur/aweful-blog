@@ -8,7 +8,7 @@ import { Layout } from 'layout'
 
 import 'style/post.scss'
 
-const AboutMe = props => {
+const About = props => {
   console.log('props', props)
   const { data } = props
   const { html, id, frontmatter } = data.markdownRemark
@@ -40,13 +40,13 @@ const AboutMe = props => {
   )
 }
 
-AboutMe.propTypes = {
+About.propTypes = {
   data: PropTypes.object,
 }
 
 export const pageQuery = graphql`
-  query AboutmeQuery {
-    markdownRemark(frontmatter: { path: { eq: "/aboutme" } }) {
+  query AboutQuery {
+    markdownRemark(frontmatter: { path: { eq: "/about" } }) {
       id
       html
       frontmatter {
@@ -59,4 +59,4 @@ export const pageQuery = graphql`
   }
 `
 
-export default AboutMe
+export default About
