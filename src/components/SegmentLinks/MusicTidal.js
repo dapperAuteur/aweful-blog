@@ -10,8 +10,8 @@ const MusicTidal = props => {
           width="100%"
           height="150"
           src="https://song.link/embed?url=https://song.link/i/1021964479"
-          frameborder="0"
-          allowfullscreen="true"
+          frameBorder="0"
+          allowFullScreen={true}
         />
       </div>
     </div>
