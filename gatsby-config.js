@@ -4,9 +4,9 @@ const path = require('path')
 module.exports = {
   pathPrefix: process.env.CI ? `/${name}` : '/',
   siteMetadata: {
-    author: 'SeonHyungJo',
+    author: 'aweful',
     title: 'aweful Blog',
-    siteUrl: 'https://gatsby-sseon-starter.netlify.com',
+    siteUrl: 'http://www.idonotknowhowthisworks.com',
   },
   plugins: [
     {
