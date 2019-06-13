@@ -15,6 +15,10 @@ export class Layout extends React.Component {
     this.state = {
       navList: [
         {
+          path: '/',
+          name: 'home',
+        },
+        {
           path: '/posts',
           name: 'post',
         },
