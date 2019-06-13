@@ -3,8 +3,8 @@ path: "/idnkhtw/they-is-my-family-member"
 author: "aweful"
 date: "2019-06-11T11:35:13.234Z"
 title: "They Is My Family Member"
-tags: ["pronouns","lgbtqia"]
-category: "post"
+# tags: ["pronouns","lgbtqia"]
+# category: "post"
 ---
 
 They Is My Family Member.

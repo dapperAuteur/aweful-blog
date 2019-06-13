@@ -1,4 +1,11 @@
-
+---
+# path: "/imposter-syndrome/sink-or-swim"
+# author: "aweful"
+# date: "2019-06-04T13:35:13.234Z"
+# title: "Sink or Swim"
+# tags: ["junior developer","imposter syndrome"]
+# category: "post"
+---
 # The Commish: The First Pro Kickballer
 
 I’m about to tell you the story about the first professional kickballer. 

@@ -1,4 +1,11 @@
-
+---
+# path: "/imposter-syndrome/sink-or-swim"
+# author: "aweful"
+# date: "2019-06-04T13:35:13.234Z"
+# title: "Sink or Swim"
+# tags: ["junior developer","imposter syndrome"]
+# category: "post"
+---
 # iKHtW prototypal inheritance
 
 This is a podcast episode from ‘I Know How this Works’. You can subscribe here or on iTunes podcasts.

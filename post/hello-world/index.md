@@ -3,8 +3,8 @@ path: "/post/hello-world.html"
 author: "sseon"
 date: "2017-07-14T03:49:16.408Z"
 title: "Hello World"
-tags: ["first"]
-category: "post"
+# tags: ["first"]
+# category: "post"
 ---
 
 

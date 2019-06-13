@@ -3,8 +3,8 @@ path: "/aboutme"
 author: "sseon"
 date: "2017-07-18"
 title: "About Me"
-tags: ["about", "me"]
-category: "aboutme"
+# tags: ["about", "me"]
+# category: "aboutme"
 ---
 
 I speak Latin because I am a fancy man.

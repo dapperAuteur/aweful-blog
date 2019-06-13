@@ -3,8 +3,8 @@ path: "/post/sample-post22"
 author: "sseon"
 date: "2017-07-18T13:35:13.234Z"
 title: "Sample Post"
-tags: ["latin", "sample"]
-category: "post"
+# tags: ["latin", "sample"]
+# category: "post"
 ---
 
 I speak Latin because I am a fancy man.
