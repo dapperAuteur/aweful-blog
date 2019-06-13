@@ -41,16 +41,24 @@ export class Layout extends React.Component {
         <Helmet
           title="aweful Blog"
           meta={[
-            { name: 'description', content: 'sseon theme' },
-            { name: 'keywords', content: 'sseon, blog, theme' },
+            {
+              name: 'description',
+              content:
+                'i do not know how this works portfolio && blog for software developer growth',
+            },
+            {
+              name: 'keywords',
+              content:
+                'aweful, blog, software, software developer, art, blockchain, freelance, entrepreneur',
+            },
             {
               name: 'viewport',
               content: 'width=device-width, initial-scale=1',
             },
           ]}
         >
-          {/* 한국어 설정 진행 */}
-          <html lang="ko" />
+          {/* 한국어 설정 진행 */}aweful Blog
+          <html lang="en" />
         </Helmet>
 
         {location.pathname !== '/' && (

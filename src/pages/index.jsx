@@ -40,14 +40,17 @@ const Index = props => {
           <SocialMedia />
           <MusicTidal />
           {/* Bottom Button */}
-          {/*<div className="menu">
+          <div className="menu">
             <div className="menuItem">
               <LinkButton to="/posts">All Post</LinkButton>
             </div>
             <div className="menuItem">
               <LinkButton to="/category">Category</LinkButton>
             </div>
-        </div>*/}
+            <div className="menuItem">
+              <LinkButton to="/about">About aweful</LinkButton>
+            </div>
+          </div>
         </div>
       </div>
     </Layout>

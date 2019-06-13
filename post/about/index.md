@@ -17,15 +17,16 @@ Onward.
 
 Don’t Be Good. Be Great. Be Grateful.
 
-![aweful signature goes here](https://res.cloudinary.com/devdash54321/image/upload/v1559761033/DSC09460.jpg)
+![aweful signature goes here](https://res.cloudinary.com/devdash54321/image/upload/v1560454807/aweful/aweful_signature_rainbow.gif)
+
 aweful
 
 
-
+<!-- 
 ```js
 const test = "test"
 
 function() {
     console.log(test);
 }
-```
+``` -->
