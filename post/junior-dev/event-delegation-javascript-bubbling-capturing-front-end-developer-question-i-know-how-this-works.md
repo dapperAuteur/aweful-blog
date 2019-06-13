@@ -2,12 +2,13 @@
 path: "/javascript/event-delegation-javaScript-bubbling-capturing-front-end-developer-question"
 author: "aweful"
 date: "2016-10-03T13:35:13.234Z"
-title: "Sink or Swim"
+title: "Event Delegation JavaScript Bubbling Capturing Front End Developer Question"
 tags: ["junior developer","event delegation", "javascript", "front end development"]
 category: "post"
 ---
 # Event Delegation JavaScript Bubbling Capturing Front End Developer Question I Know How this Works
 
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/_I9jslUtijs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
 
 
 ![](https://cdn-images-1.medium.com/max/2000/0*ToORCSmu7xpqbGF6.jpg)
