@@ -1,10 +1,10 @@
 ---
-# path: "/imposter-syndrome/sink-or-swim"
-# author: "aweful"
-# date: "2019-06-04T13:35:13.234Z"
-# title: "Sink or Swim"
-# tags: ["junior developer","imposter syndrome"]
-# category: "post"
+path: "/javascript/event-delegation-javaScript-bubbling-capturing-front-end-developer-question"
+author: "aweful"
+date: "2016-10-03T13:35:13.234Z"
+title: "Sink or Swim"
+tags: ["junior developer","event delegation", "javascript", "front end development"]
+category: "post"
 ---
 # Event Delegation JavaScript Bubbling Capturing Front End Developer Question I Know How this Works
 

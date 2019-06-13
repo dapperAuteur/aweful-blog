@@ -1,10 +1,10 @@
 ---
-# path: "/imposter-syndrome/sink-or-swim"
-# author: "aweful"
-# date: "2019-06-04T13:35:13.234Z"
-# title: "Sink or Swim"
-# tags: ["junior developer","imposter syndrome"]
-# category: "post"
+path: "/adobe-creative-cloud/editing-audio-with-adobe-creative-cloud-premiere-audition"
+author: "aweful"
+date: "2016-10-06T13:35:13.234Z"
+title: "Editing Audio With Adobe Creative Cloud Premiere Audition"
+tags: ["editing","adobe creative cloud", "premiere", "audition"]
+category: "post"
 ---
 # Editing Audio With Adobe Creative Cloud Premiere Audition With @awefulBrown — I Know How this Works
 
