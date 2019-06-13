@@ -16,6 +16,7 @@ PostList.propTypes = {
 }
 
 export default function PostList(props) {
+  console.log('props', props)
   const { data, pageContext } = props
   const { edges: posts } = data.allMarkdownRemark
   const { next, prev, numPages } = pageContext

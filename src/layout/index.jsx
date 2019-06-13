@@ -31,6 +31,7 @@ export class Layout extends React.Component {
   }
 
   render() {
+    console.log('this.props', this.props)
     const { location, children } = this.props
     const { navList } = this.state
 

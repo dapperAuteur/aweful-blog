@@ -17,7 +17,7 @@ Onward.
 
 Don’t Be Good. Be Great. Be Grateful.
 
-![aweful signature goes here](https://res.cloudinary.com/devdash54321/image/upload/v1559761033/DSC09460.jpg width=250x)
+![aweful signature goes here](https://res.cloudinary.com/devdash54321/image/upload/v1559761033/DSC09460.jpg)
 aweful
 
 
