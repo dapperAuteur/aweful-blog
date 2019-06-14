@@ -62,6 +62,10 @@ export class Layout extends React.Component {
           ]}
         >
           {/* 한국어 설정 진행 */}aweful Blog
+          <script
+            type="text/javascript"
+            src="https://assets.calendly.com/assets/external/widget.js"
+          />
           <html lang="en" />
         </Helmet>
 
