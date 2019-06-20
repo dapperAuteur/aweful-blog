@@ -49,7 +49,7 @@ export class Layout extends React.Component {
             {
               name: 'description',
               content:
-                'i do not know how this works portfolio && blog for software developer growth',
+                'i write code. i do not know how this works portfolio && blog for software developer growth',
             },
             {
               name: 'keywords',
@@ -62,7 +62,7 @@ export class Layout extends React.Component {
             },
           ]}
         >
-          {/* 한국어 설정 진행 */}aweful Blog
+          aweful Blog
           <script
             type="text/javascript"
             src="https://assets.calendly.com/assets/external/widget.js"
