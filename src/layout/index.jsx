@@ -44,7 +44,7 @@ export class Layout extends React.Component {
       <>
         {/* head custom 진행 */}
         <Helmet
-          title="aweful Blog"
+          title="i write code. an aweful Blog."
           meta={[
             {
               name: 'description',
@@ -54,7 +54,7 @@ export class Layout extends React.Component {
             {
               name: 'keywords',
               content:
-                'aweful, blog, software, software developer, art, blockchain, freelance, entrepreneur',
+                'i write code, code, an aweful Blog, aweful, blog, software, software developer, art, blockchain, freelance, entrepreneur',
             },
             {
               name: 'viewport',

@@ -18,9 +18,9 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        title: 'aweful Blog',
-        name: 'aweful Blog Starter',
-        short_name: 'aweful Blog',
+        title: 'i write code. an aweful Blog.',
+        name: 'i write code. an aweful Blog.',
+        short_name: 'i write code. an aweful Blog.',
         start_url: '/',
         background_color: '#fff',
         theme_color: '#663399',
