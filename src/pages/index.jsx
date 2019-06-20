@@ -24,6 +24,7 @@ const Index = props => {
           />*/}
           {/* Main Image */}
           <div className="img">
+            <div className="name">i write code</div>
             <LinkButton to="/">
               <img
                 className="img-circle"
