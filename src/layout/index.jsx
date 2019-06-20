@@ -10,6 +10,7 @@ import 'style/baseLayout.scss'
 
 export class Layout extends React.Component {
   constructor(props) {
+    console.log('props', props)
     super(props)
 
     this.state = {

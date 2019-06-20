@@ -9,7 +9,7 @@ const Calendar = props => {
     <div className="segment">
       <div className="title">Meet || Code w/ aweful</div>
       <div className="sns">
-        <SNSButton key={'Calendly_button'} to="https://calendly.com/iwritecode">
+        <SNSButton key={'Calendly_button'} to="/have-an-aweful-meeting">
           <FaCalendar size="1.5rem" />
         </SNSButton>
       </div>

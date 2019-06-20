@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { Layout } from 'layout'
-import { LinkButton } from 'component/Button'
+import { LinkButton, SNSButton } from 'component/Button'
 
 import Streaming from './../components/SegmentLinks/Streaming'
 
@@ -9,6 +9,7 @@ import 'style/index.scss'
 import Calendar from '../components/SegmentLinks/Calendar'
 import SocialMedia from '../components/SegmentLinks/SocialMedia'
 import MusicTidal from '../components/SegmentLinks/MusicTidal'
+import { FaCalendar } from 'react-icons/fa'
 
 const Index = props => {
   return (
@@ -37,8 +38,11 @@ const Index = props => {
           <Streaming />
           {/* Title */}
           <Calendar />
+          {/* <SNSButton key={'Calendly_button'} to="/meet-with-aweful">
+            <FaCalendar size="1.5rem" />
+          </SNSButton> */}
           <SocialMedia />
-          <MusicTidal />
+          {/* <MusicTidal /> */}
           {/* Bottom Button */}
           <div className="menu">
             <div className="menuItem">

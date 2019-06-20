@@ -10,6 +10,12 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [`gatsby-remark-responsive-iframe`],
+      },
+    },
+    {
       resolve: 'gatsby-plugin-manifest',
       options: {
         title: 'aweful Blog',
