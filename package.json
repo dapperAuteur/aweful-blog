@@ -28,6 +28,7 @@
     "gatsby-remark-prismjs": "^3.2.4",
     "gatsby-remark-responsive-iframe": "2.1.1",
     "gatsby-source-filesystem": "^2.0.33",
+    "gatsby-source-youtube-v2": "1.0.1",
     "gatsby-transformer-remark": "^2.2.5",
     "node-sass": "^4.11.0",
     "prismjs": "^1.15.0",

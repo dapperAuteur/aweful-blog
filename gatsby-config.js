@@ -1,3 +1,4 @@
+require('dotenv').config()
 const { name } = require('./package.json')
 const path = require('path')
 
@@ -9,6 +10,14 @@ module.exports = {
     siteUrl: 'http://www.idonotknowhowthisworks.com',
   },
   plugins: [
+    {
+      resolve: `gatsby-source-youtube-v2`,
+      options: {
+        channelId: [`${process.env.youtubeChannelId}`],
+        apiKey: `${process.env.googleApiKey}`,
+        maxVideos: 50,
+      },
+    },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
