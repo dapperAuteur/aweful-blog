@@ -12,7 +12,11 @@ const postsPerPage = 5
  * @param graphql : function
  * @summary Create Pages
  */
-exports.createPages = ({ actions, graphql }) => {
+
+//  { actions, graphql }
+exports.createPages = props => {
+  console.log('gatsby-node props', props)
+  const { actions, graphql } = props
   const { createPage } = actions
 
   return graphql(`
@@ -164,8 +168,8 @@ const createTagPages = (createPage, edges) => {
     path: '/category',
     component: TagTemplate,
     context: {
-      posts
-    }
+      posts,
+    },
   })
 
   Object.keys(posts).forEach(tagName => {
@@ -177,8 +181,8 @@ const createTagPages = (createPage, edges) => {
       context: {
         posts,
         post,
-        tag: tagName
-      }
+        tag: tagName,
+      },
     })
   })
 }
@@ -203,8 +207,8 @@ const CreateCommonPage = (createPage, posts, pageName) => {
         skip: i * postsPerPage,
         prev: i === 1 ? '' : i,
         next: i + 2,
-        numPages
-      }
+        numPages,
+      },
     })
   })
 
@@ -218,8 +222,8 @@ const CreateCommonPage = (createPage, posts, pageName) => {
       component: PostTemplate,
       context: {
         prev,
-        next
-      }
+        next,
+      },
     })
   })
 }

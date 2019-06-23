@@ -10,7 +10,7 @@ import 'style/baseLayout.scss'
 
 export class Layout extends React.Component {
   constructor(props) {
-    console.log('props', props)
+    // console.log('props', props)
     super(props)
 
     this.state = {
@@ -36,7 +36,7 @@ export class Layout extends React.Component {
   }
 
   render() {
-    console.log('this.props', this.props)
+    // console.log('this.props', this.props)
     const { location, children } = this.props
     const { navList } = this.state
 
