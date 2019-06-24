@@ -10,6 +10,7 @@ import { DefaultButton, TagButton } from 'component/Button'
 import 'style/post.scss'
 
 export default function Template(props) {
+  console.log('props', props)
   const { data } = props
   const { html, excerpt, frontmatter } = data.markdownRemark
   const { title, date, tags } = frontmatter
@@ -17,6 +18,7 @@ export default function Template(props) {
   // Disqus config
   const post = props.data.markdownRemark
   // const siteTitle = get(this.props, "data.site.siteMetadata.title");
+  console.log('data', data)
   const disqusShortname = 'awe'
   const disqusConfig = {
     identifier: post.id,

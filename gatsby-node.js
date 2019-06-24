@@ -57,6 +57,46 @@ exports.createPages = ({ actions, graphql }) => {
 }
 
 /**
+ * @author aweful
+ * @param actions : function
+ * @param graphql : function
+ * @summary Create YouTube Pages
+ */
+
+exports.createYouTubePages = props => {
+  const { actions, graphql } = props
+  console.log('gatsby-node props', props)
+  console.log('gatsby-node actions', actions)
+  console.log('gatsby-node graphql', graphql)
+  return graphql(`
+    allYoutubeVideo {
+      edges {
+        node {
+          id
+          title
+          description
+          channelTitle
+          thumbnail
+        }
+      }
+    }
+  `).then(result => {
+    console.log('result', result)
+    if (result.errors) {
+      return Promise.reject(result.errors)
+    }
+    const youTubeVids = result.data.allMarkdownRemark.edges
+
+    // Create YouTube Tag Page
+    createYouTubeTagPages(createPage, youTubeVids)
+
+    createYouTubePages(createPage, graphql)
+
+    // createArticlePages(createPage, graphql);
+  })
+}
+
+/**
  * @author sseon
  * @param createPage : function
  * @param graphql : graphql function
@@ -95,6 +135,42 @@ const createPostPages = (createPage, graphql) => {
     CreateCommonPage(createPage, posts, `posts`)
 
     return posts
+  })
+}
+
+/**
+ * @author aweful
+ * @param createPage : function
+ * @param graphql : graphql function
+ * @summary Create YouTube Page
+ */
+
+const createYouTubePages = (createPage, graphql) => {
+  return graphql(`
+    allYoutubeVideo(sort: {order: ASC, fields: [publishedAt]}
+      ) {
+        edges {
+          node {
+            id
+            title
+            description
+            videoId
+            publishedAt
+            privacyStatus
+            channelTitle
+            
+          }
+        }
+      }
+   `).then(result => {
+    if (result.errors) {
+      return Promise.reject(result.errors)
+    }
+
+    const youTubeVs = result.data.allYoutubeVideo.edges
+    CreateCommonPage(createPage, youTubeVs, `posts`)
+
+    return youTubeVs
   })
 }
 
@@ -152,6 +228,7 @@ const createTagPages = (createPage, edges) => {
   edges.forEach(({ node }) => {
     if (node.frontmatter.tags) {
       node.frontmatter.tags.forEach(tag => {
+        console.log('tag', tag)
         if (!posts[tag]) {
           posts[tag] = []
         }
@@ -164,8 +241,8 @@ const createTagPages = (createPage, edges) => {
     path: '/category',
     component: TagTemplate,
     context: {
-      posts
-    }
+      posts,
+    },
   })
 
   Object.keys(posts).forEach(tagName => {
@@ -177,8 +254,49 @@ const createTagPages = (createPage, edges) => {
       context: {
         posts,
         post,
-        tag: tagName
-      }
+        tag: tagName,
+      },
+    })
+  })
+}
+
+/**
+ * @author aweful
+ * @param createPage : function
+ * @param edges : tag list
+ * @summary Create YouTube Tag Page
+ */
+
+const createYouTubeTagPages = (createPage, edges) => {
+  const youTubePosts = {}
+  // youTubePosts[tag].push('youTube')
+
+  edges.forEach(({ node }) => {
+    console.log('node', node)
+    if (node.channelTitle) {
+      node.forEach
+    }
+  })
+
+  createPage({
+    path: '/category',
+    component: TagTemplate,
+    context: {
+      posts: youTubePosts,
+    },
+  })
+
+  Object.keys(youTubePosts).forEach(tagName => {
+    const youTubePost = youTubePosts[tagName]
+
+    createPage({
+      path: `/category/${tagName}`,
+      component: TagTemplate,
+      context: {
+        posts: youTubePosts,
+        post: youTubePost,
+        tag: tagName,
+      },
     })
   })
 }
@@ -203,8 +321,8 @@ const CreateCommonPage = (createPage, posts, pageName) => {
         skip: i * postsPerPage,
         prev: i === 1 ? '' : i,
         next: i + 2,
-        numPages
-      }
+        numPages,
+      },
     })
   })
 
@@ -218,8 +336,8 @@ const CreateCommonPage = (createPage, posts, pageName) => {
       component: PostTemplate,
       context: {
         prev,
-        next
-      }
+        next,
+      },
     })
   })
 }

@@ -13,32 +13,16 @@ const YouTubeVideos = props => {
   )
 }
 
-export const youtubeListQuery = graphql`
-  query youtubeListQuery(){
-    {
-      allYoutubeVideo {
-        edges {
-          node {
-            id
-            title
-            description
-            thumbnail {
-              url
-              width
-              height
-            }
-            localThumbnail {
-              id
-            }
-            videoId
-            publishedAt
-            privacyStatus
-            channelTitle
-          }
-        }
-      }
-    }
-  }
-`
+// export const youtubeListQuery = graphql`
+//   query youTubeListQuery {
+//     allYoutubeVideo {
+//       totalCount
+//       nodes {
+//         id
+//         title
+//       }
+//     }
+//   }
+// `
 
 export default YouTubeVideos

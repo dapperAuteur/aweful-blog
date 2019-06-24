@@ -11,6 +11,7 @@ import 'style/posts.scss'
 import 'style/post.scss'
 
 function Tags({ posts = {}, post = [], tag = '' }) {
+  console.log('posts', posts)
   return (
     <>
       {/* <h1>Tags</h1> */}
