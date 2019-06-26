@@ -1,8 +1,8 @@
 ---
-path: "/the-elementary-mba/raise-your-prices"
-author: "aweful"
-date: "2019-06-11T13:35:13.234Z"
-title: "Raise Your Prices"
+# path: "/the-elementary-mba/raise-your-prices"
+# author: "aweful"
+# date: "2019-06-11T13:35:13.234Z"
+# title: "Raise Your Prices"
 # tags: ["the elementary mba","temba", "price", "marketing"]
 # category: "post"
 ---

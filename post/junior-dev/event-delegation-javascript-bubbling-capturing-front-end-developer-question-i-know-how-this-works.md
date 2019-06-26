@@ -23,18 +23,4 @@ Where I found my information:
 
 * (image) [http://mohwaproject.tistory.com/entry/dom-event-bubbling-capture%EC%97%90-%EB%8C%80%ED%95%98%EC%97%AC](http://mohwaproject.tistory.com/entry/dom-event-bubbling-capture%EC%97%90-%EB%8C%80%ED%95%98%EC%97%AC)
 
-**Sponsors:**
-
-* [**AwesomeWebStore.com](http://www.awesomewebstore.com/)**
-
-* [**@AweWS](http://twitter.com/awews)**
-
-* [**ThatOneTee.com](http://www.thatonetee.com/)**
-
-* [**@AweWS](http://twitter.com/awews)**
-
-* [**5–10.Club](http://www.5-10.club/)**
-
-* [**@5–10Club](http://twitter.com/5_10club)**
-
 *Originally published at [awews.com](http://awews.com/i-know-how-this-works/2016/10/04/event-delegation-javascript-bubbling-capturing-front-end-dev-question) on October 4, 2016.*

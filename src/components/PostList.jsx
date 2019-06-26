@@ -14,9 +14,9 @@ const PostList = ({ posts = [] }) => (
           <div className="blog-post-preview" key={post.id}>
             <div className="blog-container">
               <p className="title">
-                <GatsbyLink to={post.frontmatter.path}>
+                {/* <GatsbyLink to={post.frontmatter.path}>
                   {post.frontmatter.title}
-                </GatsbyLink>
+                </GatsbyLink> */}
               </p>
             </div>
             <div className="blog-container">
