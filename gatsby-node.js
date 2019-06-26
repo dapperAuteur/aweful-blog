@@ -23,7 +23,7 @@ exports.createPages = ({ actions, graphql }) => {
       ) {
         edges {
           node {
-            excerpt(pruneLength: 100)
+            excerpt(pruneLength: 20)
             html
             id
             timeToRead
@@ -38,11 +38,14 @@ exports.createPages = ({ actions, graphql }) => {
       }
     }
   `).then(result => {
+    // console.log('result', result)
     if (result.errors) {
       return Promise.reject(result.errors)
     }
 
     const posts = result.data.allMarkdownRemark.edges
+
+    // const youTubePosts = result.data.allYoutubeVideo.nodes
 
     // Create Tag Page
     createTagPages(createPage, posts)
@@ -51,6 +54,8 @@ exports.createPages = ({ actions, graphql }) => {
     createPostPages(createPage, graphql)
     // Create Article Page
     createArticlePages(createPage, graphql)
+
+    // createYouTubePages(createPage, graphql, youTubePosts)
 
     return posts
   })
@@ -63,11 +68,11 @@ exports.createPages = ({ actions, graphql }) => {
  * @summary Create YouTube Pages
  */
 
-exports.createYouTubePages = props => {
+const createYouTubePostPages = props => {
   const { actions, graphql } = props
-  console.log('gatsby-node props', props)
-  console.log('gatsby-node actions', actions)
-  console.log('gatsby-node graphql', graphql)
+  // console.log('gatsby-node props', props)
+  // console.log('gatsby-node actions', actions)
+  // console.log('gatsby-node graphql', graphql)
   return graphql(`
     allYoutubeVideo {
       edges {
@@ -81,7 +86,7 @@ exports.createYouTubePages = props => {
       }
     }
   `).then(result => {
-    console.log('result', result)
+    // console.log('result', result)
     if (result.errors) {
       return Promise.reject(result.errors)
     }
@@ -145,7 +150,7 @@ const createPostPages = (createPage, graphql) => {
  * @summary Create YouTube Page
  */
 
-const createYouTubePages = (createPage, graphql) => {
+const createYouTubePages = (createPage, graphql, youTubePosts) => {
   return graphql(`
     allYoutubeVideo(sort: {order: ASC, fields: [publishedAt]}
       ) {
@@ -163,14 +168,15 @@ const createYouTubePages = (createPage, graphql) => {
         }
       }
    `).then(result => {
+    // console.log('youTubePosts', youTubePosts)
     if (result.errors) {
       return Promise.reject(result.errors)
     }
 
-    const youTubeVs = result.data.allYoutubeVideo.edges
-    CreateCommonPage(createPage, youTubeVs, `posts`)
+    // const youTubeVs = result.data.allYoutubeVideo.edges
+    CreateCommonPage(createPage, youTubePosts, `posts`)
 
-    return youTubeVs
+    return youTubePosts
   })
 }
 
@@ -228,7 +234,7 @@ const createTagPages = (createPage, edges) => {
   edges.forEach(({ node }) => {
     if (node.frontmatter.tags) {
       node.frontmatter.tags.forEach(tag => {
-        console.log('tag', tag)
+        // console.log('tag', tag)
         if (!posts[tag]) {
           posts[tag] = []
         }
@@ -272,7 +278,7 @@ const createYouTubeTagPages = (createPage, edges) => {
   // youTubePosts[tag].push('youTube')
 
   edges.forEach(({ node }) => {
-    console.log('node', node)
+    // console.log('node', node)
     if (node.channelTitle) {
       node.forEach
     }
