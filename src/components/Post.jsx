@@ -17,7 +17,7 @@ export default function Template(props) {
   // Disqus config
   const post = props.data.markdownRemark
   // const siteTitle = get(this.props, "data.site.siteMetadata.title");
-  const disqusShortname = 'awe'
+  const disqusShortname = 'idnkhtw'
   const disqusConfig = {
     identifier: post.id,
     title: post.frontmatter.title,
@@ -54,7 +54,6 @@ export default function Template(props) {
           {/* Post Tags */}
           <TagButton list={tags || []} />
         </article>
-        {/* 댓글기능 추가 */}
         <article className="blog-post-comment">
           <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
         </article>
