@@ -1,12 +1,15 @@
 ---
-path: "/hip-hop-jewels/"
-author: "aweful"
-date: "1979-06-20T13:35:13.234Z"
-title: "Hip-Hop Jewel"
-tags: ["hip-hop","jewel", "about"]
-category: "post"
+path: '/hip-hop-jewels/'
+author: 'aweful'
+date: '1979-06-20T13:35:13.234Z'
+title: 'Hip-Hop Jewel'
+tags: ['hip-hop', 'jewel', 'about']
+category: 'post'
 ---
+
 # Hip-Hop Jewel
+
+[Hip-Hop Jewel breakdown](https://res.cloudinary.com/devdash54321/image/upload/v1561702646/hip-hop_jewels_axioms_categories_breakdown.png)
 
 A Hip-Hop Jewel (HHJ) is a word or phrase that one may use to help them make a decision when in a difficult situations.
 
