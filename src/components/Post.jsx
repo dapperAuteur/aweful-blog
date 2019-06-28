@@ -54,9 +54,9 @@ export default function Template(props) {
           {/* Post Tags */}
           <TagButton list={tags || []} />
         </article>
-        <article className="blog-post-comment">
+        {/* <article className="blog-post-comment">
           <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
-        </article>
+        </article> */}
       </div>
     </Layout>
   )
