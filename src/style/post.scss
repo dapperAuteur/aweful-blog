@@ -1,11 +1,11 @@
-@import "font.scss";
-@import "valuables.scss";
+@import 'font.scss';
+@import 'valuables.scss';
 
 .blog-post {
   background: white;
   box-shadow: 0px 5px 10px 1px #aaaaaa;
 
-  font-family: "NanumSquareRound";
+  font-family: 'NanumSquareRound';
 
   padding: 3rem 3rem;
   margin: 1rem auto;
@@ -19,7 +19,7 @@
 
   & .title {
     font: {
-      family: "SCDream";
+      family: 'SCDream';
       size: 50px;
       weight: 800;
     }
@@ -100,4 +100,8 @@
 
     box-shadow: none;
   }
+}
+
+.count-down {
+  text-align: center;
 }
