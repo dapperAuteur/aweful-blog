@@ -129,12 +129,19 @@ module.exports = {
       options: {
         trackingId: 'UA-10207332-30',
       },
-    },{
-      resolve: `gatsby-plugin-hotjar`,
-    options: {
-      id: 1444912,
-      sv: 6
     },
-    }
+    {
+      resolve: `gatsby-plugin-hotjar`,
+      options: {
+        id: 1444912,
+        sv: 6,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-stripe`,
+      options: {
+        async: true,
+      },
+    },
   ],
 }
