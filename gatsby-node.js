@@ -15,7 +15,7 @@ const postsPerPage = 5
 
 //  { actions, graphql }
 exports.createPages = props => {
-  console.log('gatsby-node props', props)
+  // console.log('gatsby-node props', props)
   const { actions, graphql } = props
   const { createPage } = actions
 

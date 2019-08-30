@@ -24,6 +24,6 @@ Fusce consequat nisi id nibh lobortis dictum. In cursus auctor diam, ac venenati
 const test = "test"
 
 function() {
-    console.log(test);
+    // console.log(test);
 }
 ```
