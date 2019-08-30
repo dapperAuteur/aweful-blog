@@ -7,6 +7,7 @@ module.exports = {
     author: 'aweful',
     title: 'aweful Blog',
     siteUrl: 'http://www.idonotknowhowthisworks.com',
+    description: `aweful, full of life, blog. A tool and medium used to share what I've learned and learning.`,
   },
   plugins: [
     {
@@ -50,6 +51,15 @@ module.exports = {
               }
             }
         }`,
+      },
+    },
+    `gatsby-plugin-stripe`,
+    {
+      resolve: `gatsby-source-stripe`,
+      options: {
+        objects: ['Sku'],
+        secretKey: process.env.STRIPE_SECRET_KEY,
+        downloadFiles: true,
       },
     },
     {
@@ -129,12 +139,13 @@ module.exports = {
       options: {
         trackingId: 'UA-10207332-30',
       },
-    },{
-      resolve: `gatsby-plugin-hotjar`,
-    options: {
-      id: 1444912,
-      sv: 6
     },
-    }
+    {
+      resolve: `gatsby-plugin-hotjar`,
+      options: {
+        id: 1444912,
+        sv: 6,
+      },
+    },
   ],
 }
