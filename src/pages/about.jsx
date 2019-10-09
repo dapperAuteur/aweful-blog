@@ -9,7 +9,7 @@ import { Layout } from 'layout'
 import 'style/post.scss'
 
 const About = props => {
-  console.log('props', props)
+  // console.log('props', props)
   const { data } = props
   const { html, id, frontmatter } = data.markdownRemark
   const { title, date, tags } = frontmatter
