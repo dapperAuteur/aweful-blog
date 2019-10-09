@@ -14,6 +14,8 @@ This is a video and podcast episode.
 
 This is a short video describing how I got IntraEdge to sponsor my freeCodeCamp Meetup. To find out more leave a comment or shoot me a message on instagram @awefulmorningshow .
 
+visit event page for [aweful morning show](https://events.awefulmorningshow.live)
+
 How did I do it?
 Go get your pen and paper. You'll wanna write this down.
 ...
