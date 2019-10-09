@@ -53,15 +53,6 @@ module.exports = {
         }`,
       },
     },
-    `gatsby-plugin-stripe`,
-    {
-      resolve: `gatsby-source-stripe`,
-      options: {
-        objects: ['Sku'],
-        secretKey: process.env.STRIPE_SECRET_KEY,
-        downloadFiles: true,
-      },
-    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
