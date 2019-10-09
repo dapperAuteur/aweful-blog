@@ -1,12 +1,12 @@
 ---
-path: "/hip-hop-jewels/2020/be-the-bum-rush"
+path: "/hip-hop-axiom/2020/be-the-bum-rush"
 author: "aweful"
 date: "2019-06-03T13:35:13.234Z"
-title: "Hip-Hop Jewel 2020: You Can't Stop The Bum-Rush. Be The Bum-Rush"
-tags: ["hip-hop","jewel", "2000-2999", "#hiphopjewel"]
+title: "Hip-Hop Axiom 2020: You Can't Stop The Bum-Rush. Be The Bum-Rush"
+tags: ["hip-hop","jewel", "2000-2999","#hiphopaxiom", "axiom"]
 category: "post"
 ---
-# Hip-Hop Jewel 2020: You Can't Stop The Bum-Rush. Be The Bum-Rush
+# Hip-Hop Axiom 2020: You Can't Stop The Bum-Rush. Be The Bum-Rush
 
 The dictionary meaning of a 'bum-rush' according to Merriam-Webster is ['to attack or seize with an overpowering rush'](https://www.merriam-webster.com/dictionary/bum-rush).
 
